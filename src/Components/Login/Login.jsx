@@ -3,7 +3,7 @@ import { auth, signInWithGoogle } from "../../Firebase/Firebase.utils";
 import CustomButton from "../CustomButton/CustomButton";
 import FormInput from "../FormInput/FormInput";
 
-import "./Login.scss";
+import "./login.scss";
 
 class Login extends Component {
   constructor() {
