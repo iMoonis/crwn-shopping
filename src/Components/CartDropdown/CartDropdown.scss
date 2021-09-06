@@ -20,8 +20,21 @@
         height: 240px;
         display: flex;
         flex-direction: column;
-        overflow: scroll;
+        overflow-y: scroll;
     }
+
+    // /* Hide scrollbar for Chrome, Safari and Opera */
+    // .cart-items::-webkit-scrollbar {
+    //     display: none;
+    // }
+
+    // /* Hide scrollbar for IE, Edge and Firefox */
+    // .cart-items {
+    //     -ms-overflow-style: none;
+    //     /* IE and Edge */
+    //     scrollbar-width: none;
+    //     /* Firefox */
+    // }
 
     button {
         margin-top: auto;

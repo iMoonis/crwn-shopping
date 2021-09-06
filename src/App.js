@@ -4,6 +4,7 @@ import { Route, Switch, Redirect } from "react-router-dom";
 import { createStructuredSelector } from "reselect";
 
 import "./App.css";
+
 import Header from "./Components/Header/Header";
 import Homepage from "./Pages/Home/Home";
 import Shop from "./Pages/Shop/Shop";
@@ -47,7 +48,7 @@ class App extends Component {
         <Header />
         <Switch>
           <Route exact path="/" component={Homepage} />
-          <Route exact path="/shop" component={Shop} />
+          <Route path="/shop" component={Shop} />
           <Route exact path="/checkout" component={Checkout} />
           <Route
             exact
