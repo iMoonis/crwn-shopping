@@ -3,11 +3,11 @@ import { auth, signInWithGoogle } from "../../Firebase/Firebase.utils";
 import CustomButton from "../CustomButton/CustomButton";
 import FormInput from "../FormInput/FormInput";
 
-import "./SignIn.scss";
+import "./Login.scss";
 
-class SignIn extends Component {
-  constructor(props) {
-    super(props);
+class Login extends Component {
+  constructor() {
+    super();
     this.state = {
       email: "",
       password: "",
@@ -74,4 +74,4 @@ class SignIn extends Component {
   }
 }
 
-export default SignIn;
+export default Login;
