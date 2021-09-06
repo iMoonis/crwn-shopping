@@ -17,11 +17,11 @@ class SignIn extends Component {
   handleSubmit = async (event) => {
     event.preventDefault();
 
-    const {email, password} = this.state;
+    const { email, password } = this.state;
 
     try {
       await auth.signInWithEmailAndPassword(email, password);
-      this.setState({email: '', password: ''})
+      this.setState({ email: "", password: "" });
     } catch (error) {
       console.log(error);
     }
@@ -58,9 +58,15 @@ class SignIn extends Component {
             handleChange={this.handleChange}
             required
           />
-          <div className='buttons'>
+          <div className="buttons">
             <CustomButton type="submit">Sign In</CustomButton>
-            <CustomButton type="button" onClick={signInWithGoogle} isGoogleSignIn>Sign In With Google</CustomButton>
+            <CustomButton
+              type="button"
+              onClick={signInWithGoogle}
+              isGoogleSignIn
+            >
+              Sign In With Google
+            </CustomButton>
           </div>
         </form>
       </div>
