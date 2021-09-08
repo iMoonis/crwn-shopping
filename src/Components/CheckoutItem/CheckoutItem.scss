@@ -24,7 +24,7 @@
     }
 
     .quantity {
-        padding-left: 20px;
+        // padding-right: 20px;
         display: flex;
 
         .arrow {
@@ -39,5 +39,21 @@
     .remove-button {
         padding-left: 12px;
         cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .checkout-item {
+        font-size: 16px;
+
+            .name,
+            .quantity,
+            .price {
+                width: 20%;
+            }
+
+            .price {
+                margin-left: 15px;
+            }
     }
 }
