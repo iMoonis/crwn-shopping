@@ -88,7 +88,7 @@ class SignUp extends Component {
             name="confirmPassword"
             value={confirmPassword}
             onChange={this.handleChange}
-            label="Display Name"
+            label="Confirm Password"
             required
           />
           <CustomButton type="submit">SIGN UP</CustomButton>
