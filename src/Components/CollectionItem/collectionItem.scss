@@ -52,6 +52,11 @@
     }
 }
 
+@media screen and (max-width:400px) {
+    .price {
+        padding-right: 30px;
+    }
+}
 @media screen and (max-width:800px) {
     .collection-item {
         width: 43vw;

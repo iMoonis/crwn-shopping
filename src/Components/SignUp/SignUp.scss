@@ -3,7 +3,6 @@
     padding: 15px 20px;
     display: flex;
     flex-direction: column;
-    width: 380px;
     box-shadow: 3px 4px 5px rgba(17, 32, 49, 0.2),
       0 0 4px rgba(17, 32, 49, 0.2);
         
@@ -17,8 +16,18 @@
     }
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:350px) {
     .sign-up {
-        margin-top: 25px;
+        width: 300px;
+    }
+}
+@media screen and (min-width:350px) {
+    .sign-up {
+        width: 350px;
+    }
+}
+@media screen and (min-width:450px) {
+    .sign-up {
+        width: 380px;
     }
 }
